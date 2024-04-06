@@ -1,0 +1,64 @@
+/* Contact Page Styles with Liquid Design */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#contact-page-content {
+    padding: 4%; /* Use percentages for padding */
+    text-align: center;
+    color: #fff; /* Maintain text color */
+    background-color: #333; /* Maintain background color */
+    margin: 2% auto; /* Use percentages for margin */
+    max-width: 80%; /* Maintain max-width in percentage */
+}
+
+#contact-page-content h2 {
+    font-size: 2.5rem; /* Consider using vw for font size if you want it to scale with viewport size */
+    margin-bottom: 2rem; /* Fixed margin for bottom spacing */
+    color: #e50914; /* Maintain headline color */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Fixed gap for simplicity */
+}
+
+#contact-form label {
+    font-size: 1.2rem; /* Consider using vw for font size if you want it to scale with viewport size */
+    color: #f2f2f2; /* Maintain label text color */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 60%; /* Use percentage to make the input fields liquid */
+    padding: 0.5rem; /* Fixed padding for consistency */
+    border-radius: 5px; /* Maintain border-radius */
+    border: 1px solid #ddd; /* Maintain border style */
+    font-size: 1rem; /* Consider using vw for font size to make it scale with viewport size */
+}
+
+#contact-form button.submit-button {
+    padding: 0.5rem 2rem; /* Fixed padding for consistency */
+    font-size: 1.2rem; /* Consider using vw for font size if you want it to scale with viewport size */
+    background-color: #e50914; /* Maintain button background color */
+    color: #fff; /* Maintain button text color */
+    border: none; /* Maintain border style */
+    border-radius: 5px; /* Maintain border-radius */
+    cursor: pointer; /* Maintain cursor as pointer */
+    transition: background-color 0.3s ease; /* Maintain transition for hover effect */
+}
+
+#contact-form button.submit-button:hover {
+    background-color: #db564c; /* Maintain hover background color */
+}
+
+/* Ensure elements scale nicely on smaller screens */
+@media screen and (max-width: 768px) {
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea,
+    #contact-form button.submit-button {
+        width: 80%; /* Increase width for smaller screens */
+    }
+}

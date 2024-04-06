@@ -1,0 +1,35 @@
+/* About Page Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#about-page-content {
+    padding: 4vw;
+    text-align: center;
+    color: #fff; /* Adjust text color to fit your design */
+    background-color: #333; /* Background color for about page section */
+    margin: 2vw auto;
+    max-width: 80vw; /* Limit the width of the content for better readability */
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-page-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e50914; /* Adjust headline color to fit your design */
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-page-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #f2f2f2; /* Adjust paragraph text color to fit your design */
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-page-imgs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+

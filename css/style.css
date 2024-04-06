@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.titleText {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.titleText:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    #navbar {
+        width: 60%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar {
+        width: 70%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar {
+        width: 90%; /* Adjust as needed */
+    }
+}
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1% 2%; /* Use percentage for padding */
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: auto;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000; }
+    100% { box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+}
+
+/* Navbar Styles */
+#navbar a {
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../imgs/backgroundGIF.gif');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5vh 5vw;
+    min-height: 95vh;
+}
+
+.hero-section h2 {
+    color: #fff;
+    font-size: 4vh; /* Use viewport height for responsive font size */
+}
+
+/* Shop Button */
+.shop-button {
+    padding: 1rem 2rem;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.shop-button:hover {
+    background-color: #db564c;
+}
+
+/* About Us Section */
+#about-us {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 4vw;
+    margin: 2vw 0;
+}
+
+#about-us h3 {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+}
+
+#about-us p, #about-us address {
+    font-size: 1.5vw;
+    color: #666;
+}
+
+/* Google Map Iframe */
+#google-map iframe {
+    width: 100%;
+    height: 30vw;
+    border: none;
+    margin-top: 2vw;
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+#google-map:hover iframe {
+    filter: none;
+}
+
+#CustomerReviews {
+    color: white;
+}
+
+/* Customer Reviews */
+#customer-reviews {
+    text-align: center;
+    padding: 4vw 0;
+}
+
+.customer-reviews-list {
+    list-style-type: none;
+}
+
+.customer-review {
+    background-color: #fff;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+/* Rating Star */
+.star {
+    color: gold;
+    font-size: 2vw;
+}
+
+.shop-button:hover {
+    background-color: #db564c;
+    background-position: right center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 2vw 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #000;
+    font-size: 1.5vw;
+}
+
+footer a:hover {
+    color: #f38e0a;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .titleText {
+        font-size: 5vw;
+    }
+
+    .hero-section h2 {
+        font-size: 6vw;
+    }
+
+    footer a {
+        font-size: 3vw;
+    }
+
+    footer blockquote {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .titleText {
+        font-size: 7vw;
+    }
+
+    .hero-section h2 {
+        font-size: 8vw;
+    }
+
+    footer a {
+        font-size: 4vw;
+    }
+
+    footer blockquote {
+        font-size: 4vw;
+    }
+
+    #navbar a {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+}
+
+
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #FF1B09, #FF8E00, #FF1B09);
+    background-size: 200% 200%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-position 0.5s ease;
+    animation: glowing 2s infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+
+.footer-text {
+    font-size: 0.8rem;
+}
+
+.footer-quote {
+    font-size: 0.8rem;
+}
+
+.under-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 0.25s ease-in;
+}
+

@@ -1,0 +1,79 @@
+/* Liquid design approach */
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.product-image {
+    max-width: 50%;
+    height: auto;
+    flex-basis: 100%; /* Adjust this to change image size on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.product-info {
+    flex-basis: 100%; /* Adjust this for layout changes on larger screens */
+    text-align: center;
+}
+
+.product-info h2, .product-info p {
+    margin-bottom: 1rem;
+}
+
+.price-history {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+/* Hover effect */
+.product-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Breadcrumbs & Responsive Adjustments */
+.breadcrumb {
+    list-style: none;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info, .product-image {
+        flex-basis: auto;
+    }
+}
+
+#travisScottPhoto { 
+    transform: scaleX(-1);
+}
